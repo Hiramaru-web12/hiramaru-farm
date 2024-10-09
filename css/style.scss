@@ -145,6 +145,12 @@ dl,dt,dd {
 
 .fv-swiper {
   height: 700px;
+  z-index: 0;
+
+}
+
+.fv-slide {
+  filter: brightness(90%);
 }
 
 .fv-copy {
@@ -154,12 +160,10 @@ dl,dt,dd {
   z-index: 1;
 
   @include mq('sp') {
-   top: 15%;
-   right: 0;
+   right: 10%;
   }
 
   @include mq('tab') {
-   top: 10%;
    right: 15%;
   }
 

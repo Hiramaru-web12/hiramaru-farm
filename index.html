@@ -85,12 +85,18 @@
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper p-fv-swiper-wrap">
             <!-- Slides -->
-            <div class="swiper-slide">
-              <img src="img/fv1-pc.png" alt="ファーストビュー1">
-            </div>
-            <div class="swiper-slide">
-              <img src="img/fv2-pc.png" alt="ファーストビュー2">
-            </div>
+              <picture class="swiper-slide fv-slide">
+                <source media="(min-width: 768px)" srcset="img/fv1.png">
+                <img src="img/fv1-sp.png" alt="ファーストビュー1" decoding="async">
+              </picture>
+              <picture class="swiper-slide fv-slide">
+                <source media="(min-width: 768px)" srcset="img/fv2.png">
+                <img src="img/fv2-sp.png" alt="ファーストビュー2" decoding="async">
+              </picture>
+              <picture class="swiper-slide fv-slide">
+                <source media="(min-width: 768px)" srcset="img/fv3.png">
+                <img src="img/fv3-sp.png" alt="ファーストビュー3" decoding="async">
+              </picture>
           <div class="fv-copy">
             <img src="img/hero.png" alt="まごころ込めて作りました" srcset="">
          </div>
