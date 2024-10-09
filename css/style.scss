@@ -144,19 +144,28 @@ dl,dt,dd {
 }
 
 .fv-swiper {
-  height: 700px;
   z-index: 0;
-
 }
 
 .fv-slide {
   filter: brightness(90%);
+  
+  img {
+    height: 700px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+      @include mq('sp') {
+        height: 650px;
+      }
+  }
 }
 
 .fv-copy {
   position: absolute;
   top: 10%;
-  right: 30%;
+  right: 20%;
   z-index: 1;
 
   @include mq('sp') {
@@ -171,6 +180,10 @@ dl,dt,dd {
     width: 250px;
 
     @include mq('sp') {
+      width: 180px;
+    }
+
+    @include mq('tab') {
       width: 180px;
     }
   }
